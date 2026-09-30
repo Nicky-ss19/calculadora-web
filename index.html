@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web | Nicky Santana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/calculadora.js"></script>
+</head>
+<body onload="iniciarCalculadora()">
+
+    <header class="cabecera">
+        <h1>Calculadora</h1>
+        <p class="subtitulo">Suma, resta, multiplica y divide. Tu historial se queda guardado aunque cierres la página.</p>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- La calculadora como tal -->
+        <section class="calculadora" aria-label="Calculadora">
+            <div class="pantalla">
+                <div id="operacion" class="operacion"></div>
+                <div id="resultado" class="resultado">0</div>
+            </div>
+
+            <div class="teclado">
+                <button class="tecla funcion" onclick="limpiarTodo()">C</button>
+                <button class="tecla funcion" onclick="borrarUltimo()" aria-label="Borrar último dígito">&#9003;</button>
+                <button class="tecla funcion" onclick="cambiarSigno()" aria-label="Cambiar signo">&plusmn;</button>
+                <button class="tecla operador" onclick="elegirOperador('/')" aria-label="Dividir">&divide;</button>
+
+                <button class="tecla" onclick="agregarNumero('7')">7</button>
+                <button class="tecla" onclick="agregarNumero('8')">8</button>
+                <button class="tecla" onclick="agregarNumero('9')">9</button>
+                <button class="tecla operador" onclick="elegirOperador('*')" aria-label="Multiplicar">&times;</button>
+
+                <button class="tecla" onclick="agregarNumero('4')">4</button>
+                <button class="tecla" onclick="agregarNumero('5')">5</button>
+                <button class="tecla" onclick="agregarNumero('6')">6</button>
+                <button class="tecla operador" onclick="elegirOperador('-')" aria-label="Restar">&minus;</button>
+
+                <button class="tecla" onclick="agregarNumero('1')">1</button>
+                <button class="tecla" onclick="agregarNumero('2')">2</button>
+                <button class="tecla" onclick="agregarNumero('3')">3</button>
+                <button class="tecla operador" onclick="elegirOperador('+')" aria-label="Sumar">+</button>
+
+                <button class="tecla cero" onclick="agregarNumero('0')">0</button>
+                <button class="tecla" onclick="agregarPunto()">.</button>
+                <button class="tecla igual" onclick="calcular()" aria-label="Calcular">=</button>
+            </div>
+
+            <p class="pista">También puedes usar el teclado de tu computadora: números, + − * /, Enter para calcular, Backspace para borrar y Esc para limpiar.</p>
+        </section>
+
+        <!-- El historial que se guarda en localStorage -->
+        <section class="historial" aria-label="Historial de cálculos">
+            <div class="historial-cabecera">
+                <h2>Historial</h2>
+                <button id="botonBorrarHistorial" class="boton-borrar" onclick="borrarHistorial()">Borrar historial</button>
+            </div>
+            <p class="historial-nota">Toca cualquier cálculo para volver a usar su resultado.</p>
+            <ul id="listaHistorial" class="lista-historial"></ul>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        Hecha por Nicole Alejandra Santana Sánchez (2025-1213) | Programación Web, ITLA 2026-C-3
+    </footer>
+
+</body>
+</html>
