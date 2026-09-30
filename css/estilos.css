@@ -24,7 +24,7 @@ body {
         radial-gradient(circle at 12% 8%, rgba(224, 33, 138, 0.22), transparent 38%),
         radial-gradient(circle at 90% 95%, rgba(212, 175, 55, 0.18), transparent 40%);
     color: var(--blanco);
-    font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Patrick Hand', 'Comic Sans MS', cursive;
     padding: 32px 20px;
 }
 
@@ -35,9 +35,9 @@ body {
 }
 
 .cabecera h1 {
-    font-family: 'Great Vibes', 'Brush Script MT', cursive;
+    font-family: 'Cookie', 'Brush Script MT', cursive;
     font-weight: 400;
-    font-size: 4.2rem;
+    font-size: 5rem;
     line-height: 1.1;
     color: var(--dorado);
     text-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
@@ -45,7 +45,7 @@ body {
 
 .subtitulo {
     color: var(--gris);
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 480px;
     margin: 6px auto 0;
 }
@@ -87,7 +87,7 @@ body {
 
 .operacion {
     color: var(--fucsia-claro);
-    font-size: 1.05rem;
+    font-size: 1.35rem;
     min-height: 1.4em;
     word-break: break-all;
 }
@@ -95,7 +95,8 @@ body {
 .resultado {
     color: var(--dorado-claro);
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 3rem;
     word-break: break-all;
     line-height: 1.2;
 }
@@ -118,8 +119,8 @@ body {
     background-color: var(--negro-tecla);
     color: var(--blanco);
     font-family: inherit;
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 400;
     cursor: pointer;
     transition: transform 0.08s, background-color 0.2s;
 }
@@ -147,7 +148,7 @@ body {
 .tecla.operador {
     background-color: var(--dorado);
     color: var(--negro);
-    font-size: 1.6rem;
+    font-size: 2.1rem;
 }
 
 .tecla.operador:hover {
@@ -169,7 +170,7 @@ body {
     grid-column: span 1;
     background-color: var(--fucsia);
     color: var(--blanco);
-    font-size: 1.7rem;
+    font-size: 2.1rem;
 }
 
 .tecla.igual:hover {
@@ -178,7 +179,7 @@ body {
 
 .pista {
     margin-top: 16px;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     color: var(--gris);
     text-align: center;
     line-height: 1.5;
@@ -203,9 +204,9 @@ body {
 }
 
 .historial h2 {
-    font-family: 'Great Vibes', 'Brush Script MT', cursive;
+    font-family: 'Cookie', 'Brush Script MT', cursive;
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: var(--dorado);
 }
 
@@ -264,7 +265,7 @@ body {
 
 .item-texto .cuenta {
     color: var(--blanco);
-    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 .item-texto .respuesta {
